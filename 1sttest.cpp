@@ -10,9 +10,9 @@ int binary_search(int a[], int x, int lb, int ub)
         if (a[mid] == x)
             return mid;
         else if (x > a[mid])
-            binary_search(a, x, mid + 1, ub);
+            binary_search(a, x, mid + 1, ub);//with recursive way
         else
-            binary_search(a, x, lb, mid - 1);
+            binary_search(a, x, lb, mid - 1);// with recursive way
     }
     else
         return -1;
@@ -20,6 +20,7 @@ int binary_search(int a[], int x, int lb, int ub)
 }
 int main()
 {
+    cout<<"Enter a number for array: ";
     int n;
     cin >> n;
 
